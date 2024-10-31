@@ -7,7 +7,7 @@
  .globl main
 
 main: 
-	#Imprime mensagem
+	#Imprime mensagem   
 	li $v0, 4
 	la $a0, digite
 	syscall
@@ -31,7 +31,7 @@ loop_simples:
 	div.s $f6, $f2, $f4 #f6 = 1.0/i
 	add.s $f0, $f0, $f6 #soma += 1/i
 	addi $t1, $t1, 1 # i++
-	j loop_simples #Volta para o começo do loop
+	j loop_simples #Volta para o comeÃ§o do loop
 
 endloop_simples:
 	#Imprime resultado
